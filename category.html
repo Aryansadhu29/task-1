@@ -7,15 +7,15 @@
 <body>
     <h1>News Category</h1>
     <div id="news-container">
-        <!-- News articles will be dynamically inserted here -->
+        
     </div>
 
     <script src="script.js"></script>
     <script>
-        // Get the category from the URL query string
+        
         var category = new URLSearchParams(window.location.search).get("category");
         
-        // News data for each category
+        
         var news = {
             sports: [
                 { title: "Football Match Result", content: "The home team won the match with a score of 3-1." },
@@ -45,10 +45,10 @@
 
         var newsContainer = document.getElementById("news-container");
 
-        // Retrieve the news articles for the selected category
+        
         var selectedNews = news[category];
 
-        // Create card elements for each news article
+       
         selectedNews.forEach(function (item) {
             var card = document.createElement("div");
             card.classList.add("card");
